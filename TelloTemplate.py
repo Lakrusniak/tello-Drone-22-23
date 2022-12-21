@@ -41,15 +41,19 @@ recvThread = threading.Thread(target=recv)
 recvThread.start()
 
 
-# Square Funtion
+# Square Function
 def square():
     for i in range(4):
         sendmsg('forward 100')
         sendmsg('ccw 90')
+#out
 
 
-
-#Triangle Funtion
+#Triangle Function
+def triangle():
+    for i in range(3):
+        sendmsg('forward 100')
+        sendmsg('cw 120')
 
 
 
@@ -67,7 +71,8 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-        square()
+        #square()
+        triangle()
 
         sendmsg('land')
 
