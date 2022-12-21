@@ -41,10 +41,19 @@ recvThread = threading.Thread(target=recv)
 recvThread.start()
 
 
-# CREATE FUNCTIONS HERE....
+# Square Funtion
+def square():
+    for i in range(4):
+        sendmsg('forward 100')
+        sendmsg('ccw 90')
 
 
-print("\nLandon Krusniak")
+
+#Triangle Funtion
+
+
+
+print("\nLandonKrusniak")
 print("Program Name:drones  ")
 print("Date:12-21-22 ")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
@@ -58,9 +67,7 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        square()
 
         sendmsg('land')
 
