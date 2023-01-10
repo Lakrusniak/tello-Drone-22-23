@@ -61,9 +61,10 @@ try:
         sendmsg('up 60')
         sendmsg('forward 100')
 
-        sendmsg('up 55')
-        sendmsg('forward 50')
-        sendmsg('cw 180')
+        sendmsg('up 50')
+        sendmsg('down 50', 8)
+        sendmsg('flip f')
+        sendmsg('cw 360')
         
         sendmsg('land')
 
