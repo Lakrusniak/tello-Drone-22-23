@@ -42,6 +42,22 @@ recvThread.start()
 
 
 # CREATE FUNCTIONS HERE....
+def first_hoop():
+    sendmsg('takeoff')
+    sendmsg('up 60')
+    sendmsg('forward 100')
+
+
+#def second_hoop():
+
+
+#def third_hoop():
+
+
+# def forth_hoop():
+
+
+
 
 
 print("\nLandon & Andrew Krusniak")
