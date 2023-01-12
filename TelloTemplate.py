@@ -46,10 +46,13 @@ def first_hoop():
     sendmsg('forward 294')
 
 
-#def second_hoop():
+def second_hoop():
+    sendmsg('go 150 25 100 100', 7)
 
 
-#def third_hoop():
+
+def third_hoop():
+    sendmsg('curve 50 -50 0 50 -100 0 30')
 
 
 # def forth_hoop():
@@ -72,7 +75,9 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-        first_Hoop()
+        first_hoop()
+        time.sleep(2)
+        second_hoop()
 
         
         sendmsg('land')
