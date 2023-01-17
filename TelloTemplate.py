@@ -74,12 +74,19 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('takeoff', 8)
-        #sendmsg('forward 220')
-        #sendmsg('go 200 0 80 60',6)
-        sendmsg('curve -50 50 0 50 -100 0 30')
+        sendmsg("battery?")
+        sendmsg('takeoff')
 
-        sendmsg('land', 10)
+        sendmsg('forward 220', 10)
+
+        sendmsg('go 200 0 80 60', 10)
+
+        sendmsg("cw 180", 10)
+        sendmsg("curve -40 -20 0 -250 0 30", 10)
+
+
+        sendmsg("go 190 0 -75 40",  10)
+        sendmsg('land')
 
         print('\nGreat Flight!!!')
 
@@ -90,3 +97,4 @@ except KeyboardInterrupt:
 
 breakr = True
 sock.close()
+
