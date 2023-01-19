@@ -71,8 +71,8 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-        #square()
-        triangle()
+        square()
+        #triangle()
 
         sendmsg('land')
 
