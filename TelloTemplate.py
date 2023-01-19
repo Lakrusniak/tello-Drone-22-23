@@ -77,14 +77,14 @@ try:
         sendmsg("battery?")
         sendmsg('takeoff', 10)
 
-        sendmsg('forward 200', 10)
+        sendmsg('forward 220', 10)
 
         sendmsg('go 190 0 80 60', 10)
 
         sendmsg("cw 180", 10)
-        sendmsg("curve -25 -25 0 -25 -150 0 30", 10)
+        sendmsg("curve -25 -25 0 -25 -220 0 30", 10)
 
-        sendmsg("go 240 0 -75 40", 10)
+        sendmsg("go 260 0 -75 40", 10)
         sendmsg('land')
 
         print('\nGreat Flight!!!')
